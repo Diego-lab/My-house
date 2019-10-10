@@ -16,6 +16,7 @@ public class Picture
     private Triangle roof;
     private Circle sun;
     private Square campo;
+    private Person persona;
 
     /**
      * Constructor for objects of class Picture
@@ -98,6 +99,12 @@ public class Picture
         if (wall != null)   // only if it's painted already...
         {
             sun.slowMoveVertical(100);
+            persona = new Person();
+            persona.makeVisible();
+            persona.moveVertical(40);
+            persona.moveHorizontal(-260);
+            persona.slowMoveHorizontal(160);
+            
         }
     }
 }
